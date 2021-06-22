@@ -1,11 +1,19 @@
+  <p align="center"><img src="https://i1.wp.com/www.theitstuff.com/wp-content/uploads/2020/12/Introduction-to-Java.png?resize=750%2C250&ssl=1
+"></p>
+
+
 ### What is JVM (Why is Java called a Virtual Machine) ?
 
 A Java virtual machine (JVM) is a virtual machine that enables a computer to run Java programs as well as programs written in other languages that are also compiled to Java bytecode. 
 A virtual machine (VM) is a software implementation of a machine (i.e. a computer) that executes programs like a physical machine. Originally, Java was designed to run based on a virtual machine separated from a physical machine for implementing WORA (Write Once Run Anywhere), although this goal has been mostly forgotten. Therefore, the JVM runs on all kinds of hardware to execute the Java Bytecode without changing the Java execution code.
 
+------
+
 ### What makes Java Platform Independent ?
 
 With Java, the CPU executes the JVM, which is platform dependent. This running JVM then executes the Java bytecode which is platform independent, provided that we have a JVM available for it to execute upon. We might say that when writing Java code, we don't program for the code to be executed on the physical machine, thus we write the code to be executed on the Java Virtual Machine.
+
+--------
 
 ### What is bytecode  and what is JIT compiler ?
 
@@ -19,6 +27,7 @@ As soon as a java program is compiled, java bytecode is generated. In more apt t
 
 Java source code is compiled into class files, which contains byte code. These byte codes are then executed by JVM. Now here comes JIT. Since execution of byte code is slower than execution of machine language code, because JVM first needs to translate byte code into machine language code. JIT helps JVM here by compiling currently executing byte code into machine language.
 
+----
 
 ### What is Java Heap and Stack Memory ?
 
@@ -29,6 +38,7 @@ It is a complete binary tree that satisfies the condition of the heap property w
 
   <p align="center"><img src="https://i.ytimg.com/vi/w_xMK1ygPjo/maxresdefault.jpg"></p>
   
+ ------
  
  ### Java threading:
 
@@ -44,6 +54,8 @@ Multithreading in Java is a process of executing multiple threads simultaneously
 A thread is a lightweight sub-process, the smallest unit of processing. Multiprocessing and multithreading, both are used to achieve multitasking.
 However, we use multithreading rather than multiprocessing because threads use a shared memory area. They don't allocate a separate memory area so saves memory, and context-switching between the threads takes less time than process.
 Java Multithreading is mostly used in games, animation, etc.
+
+------
 
 ### Monitoring JVM with JMX (and jConsole):
 The JConsole graphical user interface is a monitoring tool that complies to the Java Management Extensions (JMX) specification. JConsole uses the extensive instrumentation of the Java Virtual Machine (Java VM) to provide information about the performance and resource consumption of applications running on the Java platform.
