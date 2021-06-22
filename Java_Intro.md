@@ -183,20 +183,44 @@ REST, or REpresentational State Transfer, is an architectural style for providin
 ### HTTP Return codes:
 
 
-* 1xx status codes: Informational requests <br/>
+* **1xx status codes:** Informational requests <br/>
 The 1xx status codes are informational requests. They indicate that the server received and understood the request and that the browser should wait a little longer for the server to process the information. These status codes are less common and don't directly affect your SEO.
 
     The server has accepted the complete request, but is still processing it. 
     
-* 2xx status codes: Successful requests <br/>
-  200 OK: Successful request.
-201 Created: The server acknowledged the created resource. 
-202 Accepted: The client's request has been received but the server is still processing it.
-203 Non-Authoritative Information: The response that the server sent to the client is not the same as it was when the server sent it.
-204 No Content: The server processed the request but is not giving any content.
-205 Reset Content: The client should refresh the document sample.
-206 Partial Content: The server is sending only a portion of the resource.
- 
+* **2xx status codes:** Successful requests <br/>
+  200 OK: Successful request. <br/>
+  201 Created: The server acknowledged the created resource.  <br/>
+  202 Accepted: The client's request has been received but the server is still processing it. <br/>
+  203 Non-Authoritative Information: The response that the server sent to the client is not the same as it was when the server sent it. <br/>
+  204 No Content: The server processed the request but is not giving any content. <br/>
+  205 Reset Content: The client should refresh the document sample. <br/>
+  206 Partial Content: The server is sending only a portion of the resource. <br/>
+  
+* **3xx status codes:** Redirects <br/>
+ The 3xx HTTP status codes indicate a redirection. When a user or search engines come across a 3xx status code, they will be redirected to a different URL from  the initial.<br/>
+  300 Multiple Choices: The request the client made has several possible responses.<br/>
+  301 Moved Permanently: The server tells the client that the resource they look for has been moved permanently to another URL.<br/>
+  302 Found: A website or page has been moved to a different URL temporarily. <br/>
+  303 See Other: This code tells the client that the server is not redirecting them to the requested resource but to another page. <br/>
+  304 Not Modified: The requested resource has not been changed since the previous transmission. <br/>
+  305 Use Proxy: The client can only access the requested resource through a proxy that's given in the response. <br/>
+  
+ *  **4xx status codes:** Client errors <br/>
+   The 4xx status codes are client errors.Something that is happening on the client-side is the issue. It might be an incorrect data format, unauthorized access, or a mistake in the request. <br/>
+   400 Bad Request: The client is sending a request with incomplete data, poorly constructed data, or invalid data.<br/>
+   401 Unauthorized: Authorization is needed for the client to access the requested resource.<br/>
+   403 Forbidden: The resource the client is trying to access is forbidden.<br/>
+   404 Not Found: The server is reachable, but the specific page the client is looking for is not. <br/>
+   405 Method Not Allowed: The server has received and recognized the request, but has rejected the specific request method.<br/>
+   
+ * **5xx status codes:** Server errors <br/>
+   The 5xx HTTP status codes are server errors. These errors are no fault of the client but suggest that there's something wrong with the server-side of things. The request the client made is good, but the server cannot generate the requested resource. <br/>
+    500 Internal Server Error: The server run into a situation it can't handle while processing the client's request.<br/>
+    501 Not Implemented: The server doesn't know or can resolve the request method sent by the client.<br/>
+    502 Bad Gateway: The server was acting as a gateway or proxy and received an invalid message from an inbound server.<br/>
+    503 Service Unavailable: The server might be down and can't process the client's request. This is commomn issue. <br/>
+    511 Network Authentication Required: The client needs to get authenticated on the network before it can access the resource.
 
 ---------
 
