@@ -137,6 +137,33 @@ The interface in Java is a mechanism to achieve abstraction. There can be only a
 
 An implementation of an interface is a Java program that references the interface using the implements keyword. The program is required to provide method logic for all non-default methods.
 
+Below is the sample program for Interface and it's implementation:
+
+diff```
+           //Interface name is created as myinterface//
+          interface myinterface {
+
+           //attributes are declared for interface//
+            String color = "Blue";
+            void name();
+             }
+            //Implementation of myinterface
+             public class InterfaceSample implements myinterface {
+
+               public static void main(String[] args) {
+
+                System.out.println(color);
+        
+              //allocating memory to "is" and called it's properties//
+                 InterfaceSample is = new InterfaceSample();
+                 is.name();
+                 }
+                  public void name() {
+                   System.out.println("favourite colour belongs to som");
+                  }
+                  }
+                    ```
+
 ---------------
 
 ### HTTP Protocol
