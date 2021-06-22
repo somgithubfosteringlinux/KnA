@@ -180,6 +180,25 @@ REST, or REpresentational State Transfer, is an architectural style for providin
  DELETE is pretty easy to understand. It is used to **delete** a resource identified by a URI.On successful deletion, return HTTP status 200 (OK) along with a response body, perhaps the representation of the deleted item (often demands too much bandwidth), or a wrapped response (see Return Values below). Either that or return HTTP status 204 (NO CONTENT) with no response body. In other words, a 204 status with no body, or the JSEND-style response and HTTP status 200 are the recommended responses.
   
 ---------
+### HTTP Return codes:
+
+
+* 1xx status codes: Informational requests <br/>
+The 1xx status codes are informational requests. They indicate that the server received and understood the request and that the browser should wait a little longer for the server to process the information. These status codes are less common and don't directly affect your SEO.
+
+    The server has accepted the complete request, but is still processing it. 
+    
+* 2xx status codes: Successful requests <br/>
+  200 OK: Successful request.
+201 Created: The server acknowledged the created resource. 
+202 Accepted: The client's request has been received but the server is still processing it.
+203 Non-Authoritative Information: The response that the server sent to the client is not the same as it was when the server sent it.
+204 No Content: The server processed the request but is not giving any content.
+205 Reset Content: The client should refresh the document sample.
+206 Partial Content: The server is sending only a portion of the resource.
+ 
+
+---------
 
 ### Mailing protocols - SMTP, POP, IMAP
 
