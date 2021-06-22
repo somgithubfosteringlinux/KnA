@@ -66,4 +66,15 @@ The JConsole graphical user interface is a monitoring tool that complies to the 
 
 <p align="center"><img src="https://lh4.googleusercontent.com/kkRklmdBb1lwZvGMnDMTAI5PXeYV23d8YjHAQwLnyLZK-saN5VlzqIQ3rNmajztiMC4NeRyaVD5tKzXoyFV3wN6VkPFU5mvdRdIGBv_x"></p>
 
+#### Reference links:
+https://www.quora.com/Why-is-the-JVM-called-the-JVM-Java-virtual-machine
+
+https://www.javatpoint.com/q/7746/jit-compiler
+
+https://www.javatpoint.com/stack-vs-heap
+
+!https://www.w3schools.com/java/java_threads.asp
+
+https://www.javatpoint.com/multithreading-in-java
+
 
