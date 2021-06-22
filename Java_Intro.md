@@ -49,6 +49,9 @@ Java Multithreading is mostly used in games, animation, etc.
 The JConsole graphical user interface is a monitoring tool that complies to the Java Management Extensions (JMX) specification. JConsole uses the extensive instrumentation of the Java Virtual Machine (Java VM) to provide information about the performance and resource consumption of applications running on the Java platform.
 
 
+<p align="center"><img src="https://lh6.googleusercontent.com/eDhToO_aiJBz7DA6wYB_EDZP7xjD1ZbEciAkHfC7tpNXkr9YlXkdAc7ct3pKPUVOxz1YFcQ48WSzhBQOEFDiosj4PZ0hEA1cZpm90Glt"></p>
 
+
+<p align="center"><img src="https://lh4.googleusercontent.com/kkRklmdBb1lwZvGMnDMTAI5PXeYV23d8YjHAQwLnyLZK-saN5VlzqIQ3rNmajztiMC4NeRyaVD5tKzXoyFV3wN6VkPFU5mvdRdIGBv_x"></p>
 
 
