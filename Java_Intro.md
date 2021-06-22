@@ -155,6 +155,8 @@ Features of HTTP:
 
 <p align="center"><img src="https://static.javatpoint.com/tutorial/computer-network/images/computer-network-http.png"></p>
 
+--------
+
 ### REST
 
 REST, or REpresentational State Transfer, is an architectural style for providing standards between computer systems on the web, making it easier for systems to communicate with each other. REST-compliant systems, often called RESTful systems, are characterized by how they are stateless and separate the concerns of client and server. We will go into what these terms mean and why they are beneficial characteristics for services on the Web. 
@@ -177,7 +179,44 @@ REST, or REpresentational State Transfer, is an architectural style for providin
 * DELETE-<br/>
  DELETE is pretty easy to understand. It is used to **delete** a resource identified by a URI.On successful deletion, return HTTP status 200 (OK) along with a response body, perhaps the representation of the deleted item (often demands too much bandwidth), or a wrapped response (see Return Values below). Either that or return HTTP status 204 (NO CONTENT) with no response body. In other words, a 204 status with no body, or the JSEND-style response and HTTP status 200 are the recommended responses.
   
+---------
 
+### Mailing protocols - SMTP, POP, IMAP
+
+**SMTP**<br/>
+Let's start with SMTP because its primary function is different from the other two. What is SMTP used for? SMTP or Simple Mail Transfer Protocol is mostly used for sending out email from an email client (e.g. Microsoft Outlook, Thunderbird or Apple Mail) to an email server. It's also used for relaying or forwarding mail messages from one mail server to another. The ability to relay messages from one server to another is necessary if the sender and recipient have different email service providers. 
+
+<p align="center"><img src="https://www.jscape.com/hubfs/images/smtp_sending_forwarding.png"></p>
+<p align="center"><img src="https://www.jscape.com/hubfs/images/smtp_imap_pop3.png"></p>
+
+
+**POP3**<br/>
+As shown in the figure above, the Post Office Protocol or POP is used to retrieve email messages from a mail server to a mail client. The latest version, which is what's widely used, is version 3 - hence the term "POP3". 
+
+POP version 3, which is specified in RFC 1939, supports extensions and several authentication mechanisms. Authentication features are necessary to prevent malicious individuals from gaining unauthorized access to users' messages. 
+
+Generally speaking, a POP3 client retrieves email in the following manner:
+
+    Connects to the mail server on port 110 (or 995 for SSL/TLS connections);
+    Retrieves email messages; 
+    Deletes copies of the messages stored on the server; and
+    Disconnects from the server
+
+Although POP clients may be configured to allow the server to continue storing copies of the downloaded messages, the steps outlined above is the usual practice. Leaving them on the server is a practice that's usually done via IMAP. Let's talk about it now.
+
+ 
+**IMAP**<br/>
+IMAP, especially the current version (IMAP4), is a more sophisticated protocol. It allows users to group related messages and place them in folders, which can in turn be arranged hierarchically. It's also equipped with message flags that indicate whether a message has been read, deleted, or replied to. It even allows users to carry out searches against the server mailboxes.
+
+Here's how IMAP works in a nutshell:
+
+    Connects to the mail server on port 143 (or 993 for SSL/TLS connections);
+    Retrieves email messages; 
+    Stays connected until the mail client app is closed and downloads messages on demand.
+
+Notice that messages aren't deleted on the server.
+
+-----------
 
 #### Reference links:
 
