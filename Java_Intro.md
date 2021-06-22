@@ -101,3 +101,58 @@ https://www.journaldev.com/2856/java-jvm-memory-model-memory-management-in-java
 ----------
 
 <h1 align="center"> OOPs Concept in java </h1>
+
+Object means a real-world entity such as a pen, chair, table, computer, watch, etc. Object-Oriented Programming is a methodology or paradigm to design a program using classes and objects. It simplifies software development and maintenance by providing some concepts:
+
+<p align="center"><img src="https://static.javatpoint.com/images/java-oops.png"></p>
+
+<b>Object:</b><br/>
+Any entity that has state and behavior is known as an object.An Object can be defined as an instance of a class. An object contains an address and takes up some space in memory.
+Example: A dog is an object because it has states like color, name, breed, etc. as well as behaviors like wagging the tail, barking, eating, etc.
+
+<b>Class:</b><br/>
+Collection of objects is called class. It is a logical entity.
+A class can also be defined as a blueprint from which you can create an individual object. Class doesn't consume any space.
+
+<b>Inheritance:</b><br/>
+When one object acquires all the properties and behaviors of a parent object, it is known as inheritance. It provides code reusability. It is used to achieve runtime polymorphism.
+
+<b>Polymorphism:</b><br/>
+If one task is performed in different ways, it is known as polymorphism. For example: to convince the customer differently, to draw something, for example, shape, triangle, rectangle, etc.In Java, we use method overloading and method overriding to achieve polymorphism.
+
+<b>Abstraction:</b><br/>
+Hiding internal details and showing functionality is known as abstraction. For example phone call, we don't know the internal processing.
+In Java, we use abstract class and interface to achieve abstraction.
+
+<b>Encapsulation:</b><br/>
+Binding (or wrapping) code and data together into a single unit are known as encapsulation. For example, a capsule, it is wrapped with different medicines.
+A java class is the example of encapsulation. Java bean is the fully encapsulated class because all the data members are private here.
+
+---------
+
+### what is an interface and what is an implementation?
+
+An interface in Java is a blueprint of a class. It has static constants and abstract methods.
+The interface in Java is a mechanism to achieve abstraction. There can be only abstract methods in the Java interface, not method body. It is used to achieve abstraction and multiple inheritance in Java.
+
+An implementation of an interface is a Java program that references the interface using the implements keyword. The program is required to provide method logic for all non-default methods.
+
+---------------
+
+### HTTP Protocol
+
+HTTP stands for HyperText Transfer Protocol.
+It is a protocol used to access the data on the World Wide Web (www).
+The HTTP protocol can be used to transfer the data in the form of plain text, hypertext, audio, video, and so on.
+This protocol is known as HyperText Transfer Protocol because of its efficiency that allows us to use in a hypertext environment where there are rapid jumps from one document to another document.
+
+Features of HTTP:
+
+   * Connectionless protocol: HTTP is a connectionless protocol. HTTP client initiates a request and waits for a response from the server. When the server receives the request, the server processes the request and sends back the response to the HTTP client after which the client disconnects the connection. The connection between client and server exist only during the current request and response time only.
+   
+   * Stateless: HTTP is a stateless protocol as both the client and server know each other only during the current request. Due to this nature of the protocol, both the client and server do not retain the information between various requests of the web pages.
+
+
+
+
+
