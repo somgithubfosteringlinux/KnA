@@ -1,6 +1,6 @@
-  <p align="center"><img src="https://i1.wp.com/www.theitstuff.com/wp-content/uploads/2020/12/Introduction-to-Java.png?resize=750%2C250&ssl=1
-"></p>
+<p align="center"><img src="https://i1.wp.com/www.theitstuff.com/wp-content/uploads/2020/12/Introduction-to-Java.png?resize=750%2C250&ssl=1"></p>
 
+-----
 
 ### What is JVM (Why is Java called a Virtual Machine) ?
 
