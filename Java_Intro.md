@@ -145,7 +145,7 @@ HTTP stands for HyperText Transfer Protocol.
 It is a protocol used to access the data on the World Wide Web (www).
 The HTTP protocol can be used to transfer the data in the form of plain text, hypertext, audio, video, and so on.
 This protocol is known as HyperText Transfer Protocol because of its efficiency that allows us to use in a hypertext environment where there are rapid jumps from one document to another document.
-
+https://www.restapitutorial.com/lessons/httpmethods.html
 Features of HTTP:
 
    * Connectionless protocol: HTTP is a connectionless protocol. HTTP client initiates a request and waits for a response from the server. When the server receives the request, the server processes the request and sends back the response to the HTTP client after which the client disconnects the connection. The connection between client and server exist only during the current request and response time only.
@@ -153,6 +153,33 @@ Features of HTTP:
    * Stateless: HTTP is a stateless protocol as both the client and server know each other only during the current request. Due to this nature of the protocol, both the client and server do not retain the information between various requests of the web pages.
 
 
+<p align="center"><img src="https://static.javatpoint.com/tutorial/computer-network/images/computer-network-http.png"></p>
+
+### REST
+
+REST, or REpresentational State Transfer, is an architectural style for providing standards between computer systems on the web, making it easier for systems to communicate with each other. REST-compliant systems, often called RESTful systems, are characterized by how they are stateless and separate the concerns of client and server. We will go into what these terms mean and why they are beneficial characteristics for services on the Web. 
+
+**Rest Methods:**
+
+* GET-<br/>
+  The HTTP GET method is used to **read** (or retrieve) a representation of a resource. In the “happy” (or non-error) path, GET returns a representation in XML or JSON and an HTTP response code of 200 (OK). In an error case, it most often returns a 404 (NOT FOUND) or 400 (BAD REQUEST).
 
 
+* PUT-<br/>
+ PUT is most-often utilized for **update** capabilities, PUT-ing to a known resource URI with the request body containing the newly-updated representation of the original resource.
+ PUT is not a safe operation, in that it modifies (or creates) state on the server, but it is idempotent. In other words, if you create or update a resource using   PUT and then make that same call again, the resource is still there and still has the same state as it did with the first call.
 
+* POST-<br/>
+  The POST verb is most-often utilized to **create** new resources. In particular, it's used to create subordinate resources. That is, subordinate to some other (e.g. parent) resource. In other words, when creating a new resource, POST to the parent and the service takes care of associating the new resource with the parent, assigning an ID (new resource URI), etc.
+ On successful creation, return HTTP status 201, returning a Location header with a link to the newly-created resource with the 201 HTTP status.
+ POST is neither safe nor idempotent. It is therefore recommended for non-idempotent resource requests. Making two identical POST requests will most-likely result in two resources containing the same information.
+
+* DELETE-<br/>
+ DELETE is pretty easy to understand. It is used to **delete** a resource identified by a URI.On successful deletion, return HTTP status 200 (OK) along with a response body, perhaps the representation of the deleted item (often demands too much bandwidth), or a wrapped response (see Return Values below). Either that or return HTTP status 204 (NO CONTENT) with no response body. In other words, a 204 status with no body, or the JSEND-style response and HTTP status 200 are the recommended responses.
+  
+
+
+#### Reference links:
+
+
+https://www.restapitutorial.com/lessons/httpmethods.html
