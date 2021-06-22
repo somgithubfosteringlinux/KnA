@@ -265,3 +265,7 @@ Notice that messages aren't deleted on the server.
 
 
 https://www.restapitutorial.com/lessons/httpmethods.html
+
+https://www.exai.com/blog/http-status-codes-cheat-sheet
+
+https://www.jscape.com/blog/smtp-vs-imap-vs-pop3-difference
