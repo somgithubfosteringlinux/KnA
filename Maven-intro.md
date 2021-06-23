@@ -1,9 +1,13 @@
+<h1 align="center">Introduction to Maven </h1>
 
+-------------
 
 ### Maven:
 
 Maven is a powerful project management tool that is based on POM (project object model). It is used for projects build, dependency and documentation. It simplifies the build process like ANT. But it is too much advanced than ANT.
 In short terms we can tell maven is a tool that can be used for building and managing any Java-based project. maven make the day-to-day work of Java developers easier and generally help with the comprehension of any Java-based project.
+
+--------
 
 ### Use of Maven:
 
@@ -15,7 +19,9 @@ Maven does a lot of helpful task like
     4.Maven is very helpful for a project while updating central repository of JARs and other dependencies.
     5.With the help of Maven we can build any number of projects into output types like the JAR, WAR etc without doing any scripting.
     6.Using maven we can easily integrate our project with source control system (such as Subversion or Git).
-    
+
+-----------
+
 ### Working of Maven:
 
 <p align="center"> <img src="https://media.geeksforgeeks.org/wp-content/uploads/How-Maven-Works.jpg"> </p>
@@ -76,3 +82,31 @@ Elements used for Creating pom.xml file
     artifactId used to give name of the project you are building.in our example name of our project is LoggerApi.
    * version- <br/>
     version element contains the version number of the project. If your project has been released in different versions then it is useful to give version of your project.
+
+------------
+
+### Maven Repository:
+
+Maven repositories are directories of packaged JAR files with some metadata. The metadata are POM files related to the projects each packaged JAR file belongs to, including what external dependencies each packaged JAR has. This metadata enables Maven to download dependencies of your dependencies recursively until all dependencies are download and put into your local machine.
+
+Maven has three types of repository :
+
+    Local repository
+    Central repository
+    Remote repository
+
+Maven searches for dependencies in this repositories. First maven searches in Local repository then Central repository then Remote repository if Remote repository specified in the POM.
+
+<p align="center"> <img src="https://media.geeksforgeeks.org/wp-content/uploads/Maven-Repository.jpg"> </p>
+
+* Local repository- <br/>
+  A local repository is a directory on the machine of developer. This repository contains all the dependencies Maven downloads. Maven only needs to download the dependencies once, even if multiple projects depends on them (e.g. ODBC).
+
+* Central repository- <br/>
+  The central Maven repository is created Maven community. Maven looks in this central repository for any dependencies needed but not found in your local repository. Maven then downloads these dependencies into your local repository. You can view central repository by this link.
+
+* Remote repository- <br/>
+  Remote repository is a repository on a web server from which Maven can download dependencies.it often used for hosting projects internal to organization. Maven then downloads these dependencies into your local repository.
+  
+  
+  
