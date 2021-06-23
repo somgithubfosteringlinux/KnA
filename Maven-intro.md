@@ -107,6 +107,36 @@ Maven searches for dependencies in this repositories. First maven searches in Lo
 
 * Remote repository- <br/>
   Remote repository is a repository on a web server from which Maven can download dependencies.it often used for hosting projects internal to organization. Maven then downloads these dependencies into your local repository.
+
+---------------------
+
+### What is Spring Boot?
+
+Spring Boot provides a good platform for Java developers to develop a stand-alone and production-grade spring application that we can just run. You can get started with minimum configurations without the need for an entire Spring configuration setup.
+
+Advantages
+
+Spring Boot offers the following advantages to its developers −
+
+    1.Easy to understand and develop spring applications
+    2.Increases productivity
+    3.Reduces the development time
   
-  
-  
+-------------
+
+### Apache tomcat and Glassfish:
+ 
+Apache Tomcat is run by Apache community - Open source and has two flavors Tomcat Web profile - light weight which is only servlet container and does not support Java EE features like EJB, JMS etc.
+
+Glassfish is run by Oracle. This is a full stack certified Java EE Container. This has its own web container (not Tomcat). It comes with features like EJB, JTA, CDI(JAVA EE 6+), JPA, JSF, JSP/Servlet and so on. It is a full stack Java EE application server.
+
+**Key Differences :**
+
+    *Tomcat is merely an HTTP server and Java servlet container. Glassfish is full-blown Java EE application servers, including an EJB container and all the other features of that stack.
+    *Tomcat has a lighter memory footprint as compare to Glassfish.
+    *Tomcat has footprint memory of 60-70 MB, while those Java EE servers weigh in at hundreds of MBs.
+    *Tomcat is very popular for simple web applications as compared to Glassfish.
+    *Comparatively the administration of Tomcat server is more easier than administration of Glassfish as there are fewer moving parts in Tomcat.
+    *Both of the Tomcat and Glassfish are open source and free but have different licenses. Glassfish is dual licensed while Tomcat has single license.
+    *Tomcat uses the Apache License while Glassfish has been licensed under CDDL and GPL.
+    *GlassFish should be preferred for Java EE enterprise applications over Tomcat.
