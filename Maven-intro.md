@@ -63,3 +63,16 @@ The sample of pom.xml
           </project>
 
 
+
+Elements used for Creating pom.xml file
+
+   * project- <br/>
+    It is the root element of the pom.xml file.
+   * modelVersion-<br/>
+    modelversion means what version of the POM model you are using. Use version 4.0.0 for maven 2 and maven 3.
+   * groupId- <br/>
+    groupId means the id for the project group. It is unique and Most often you will use a group ID which is similar to the root Java package name of the project like we used the groupId com.project.loggerapi.
+   * artifactId- <br/>
+    artifactId used to give name of the project you are building.in our example name of our project is LoggerApi.
+   * version- <br/>
+    version element contains the version number of the project. If your project has been released in different versions then it is useful to give version of your project.
