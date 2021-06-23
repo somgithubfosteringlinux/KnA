@@ -32,5 +32,34 @@ Core Concepts of Maven:
       Build profiles a set of configuration values which allows you to build your project using different configurations. For example, you may need to build your project for your local computer, for development and test. To enable different builds you can add different build profiles to your POM files using its profiles elements and are triggered in the variety of ways.
    * **Build Plugins:**<br/>
       Build plugins are used to perform specific goal. you can add a plugin to the POM file. Maven has some standard plugins you can use, and you can also implement your own in Java.
-    
+
+-------------------
+
+### Maven pom.xml file
+
+POM means Project Object Model is key to operate Maven. Maven reads pom.xml file to accomplish its configuration and operations. It is an XML file that contains information related to the project and configuration information such as dependencies, source directory, plugin, goals etc. used by Maven to build the project.
+
+The sample of pom.xml
+
+     <project xmlns="http://maven.apache.org/POM/4.0.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+      http://maven.apache.org/xsd/maven-4.0.0.xsd">
+		
+		<modelVersion>4.0.0</modelVersion>
+		<groupId> com.project.loggerapi </groupId>
+		<artifactId>LoggerApi</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+		
+	    <!-- Add typical dependencies for a web application -->
+	      <dependencies>
+			<dependency>
+					<groupId>org.apache.logging.log4j</groupId>
+					<artifactId>log4j-api</artifactId>
+					<version>2.11.0</version>
+		     </dependency>
+	        </dependencies>
+	
+          </project>
+
 
