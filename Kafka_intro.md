@@ -13,6 +13,8 @@ Following are a few benefits of Kafka −
     Durability − Kafka uses "Distributed commit log" which means messages persists on disk as fast as possible, hence it is durable..
 
     Performance − Kafka has high throughput for both publishing and subscribing messages. It maintains stable performance even many TB of messages are stored.
+    
+------------------
 
 ### Components and Description
 
@@ -65,3 +67,12 @@ Following are a few benefits of Kafka −
 
   Node which follows leader instructions are called as follower. If the leader fails, one of the follower will automatically become the new leader. A follower acts as normal consumer, pulls messages and up-dates its own data store.
 
+
+-------------
+
+### Zookeeper:
+
+<p align="center"> <img src="https://www.tutorialspoint.com/apache_kafka/images/cluster_architecture.jpg"></p>
+
+ZooKeeper is used for managing and coordinating Kafka broker. ZooKeeper service is mainly used to notify producer and consumer about the presence of any new broker in the Kafka system or failure of the broker in the Kafka system. As per the notification received by the Zookeeper regarding presence or failure of the broker then pro-ducer and consumer takes decision and starts coordinating their task with some other broker.
+	
